@@ -1,5 +1,17 @@
 # RichieWhoAngular
 
+This is a Single Page Application (SPA) built with **Angular 20** for a writer who wants to showcase and manage their books online.
+
+The goal of this project is to:
+
+- Display a collection of books to public visitors
+- Provide a hidden login route for the author to manage (add/edit/delete) books
+- Use Firebase for authentication and Firestore as the backend (initially)
+- Optionally migrate to a custom backend in the future
+- Keep the UI faithful to the original design (HTML/CSS/jQuery), but rebuilt with Angular and SCSS
+
+---
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
 
 ## Development server
