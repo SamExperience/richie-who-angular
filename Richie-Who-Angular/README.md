@@ -1,6 +1,6 @@
 # RichieWhoAngular
 
-This is a Single Page Application (SPA) built with **Angular 20** for a writer who wants to showcase and manage their books online.
+This is a Single Page Application (SPA) built with **Angular 19** for a writer who wants to showcase and manage their books online.
 
 The goal of this project is to:
 
