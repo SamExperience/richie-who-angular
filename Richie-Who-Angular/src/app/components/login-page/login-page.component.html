@@ -1,1 +1,23 @@
 <p>login-page works!</p>
+<form (ngSubmit)="onLogin()">
+  <input
+    type="email"
+    name="email"
+    [(ngModel)]="email"
+    placeholder="email"
+    required
+  /><br />
+  <input
+    type="password"
+    name="password"
+    [(ngModel)]="password"
+    placeholder="password"
+    required
+  /><br />
+  <button type="submit">Login</button>
+</form>
+
+<p *ngIf="errorMessage" style="color: red">{{ errorMessage }}</p>
+
+<!-- <button (click)="onLogout()">Logout</button>
+ -->

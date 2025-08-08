@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-public-home-page',
+  standalone: true,
   imports: [],
   templateUrl: './public-home-page.component.html',
-  styleUrl: './public-home-page.component.scss'
+  styleUrls: ['./public-home-page.component.scss'],
 })
-export class PublicHomePageComponent {
-
-}
+export class PublicHomePageComponent {}
