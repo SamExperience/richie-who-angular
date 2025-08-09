@@ -40,3 +40,29 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Env files (local)
+.env
+.env.*.local
+
+# Local environment file (do not commit real keys)
+src/environments/environment.local.ts
+# If your project uses the misspelled folder, add that too:
+src/enviroments/environment.local.ts
+
+richie-filter-temp/
+# Node / build
+node_modules/
+dist/
+
+# Env files (local)
+.env
+.env.*.local
+
+# Angular
+.angular/
+
+# Local environment file (do not commit real keys)
+src/environments/environment.local.ts
+# If your project uses the misspelled folder, add that too:
+src/enviroments/environment.local.ts
