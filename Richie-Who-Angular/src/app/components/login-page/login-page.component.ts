@@ -26,6 +26,7 @@ export class LoginPageComponent {
       next: (res: any) => {
         localStorage.setItem('token', res.idToken);
         console.log('Login success');
+        console.log(res);
         this.router.navigate(['/admin-dashboard']);
       },
       error: (err) => {
