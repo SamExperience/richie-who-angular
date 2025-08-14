@@ -24,7 +24,11 @@ export class LoginPageComponent {
     this.errorMessage = '';
     this.authService.login(this.email, this.password).subscribe({
       next: (res: any) => {
-        localStorage.setItem('token', res.idToken);
+        let expireAt = Date.now() + res.expiresIn * 1000;
+        localStorage.setItem('id_token', res.idToken);
+        localStorage.setItem('refresh_token', res.refreshToken);
+        localStorage.setItem('expires_at', expireAt.toString());
+
         console.log('Login success');
         console.log(res);
         this.router.navigate(['/admin-dashboard']);
