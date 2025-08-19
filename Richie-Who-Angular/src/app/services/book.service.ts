@@ -57,7 +57,8 @@ export class BookService {
         title: { stringValue: book.title },
         author: { stringValue: book.author },
         description: { stringValue: book.description },
-        year: { integerValue: book.year },
+        coverUrl: { stringValue: book.coverUrl },
+        createdAt: { integerValue: book.createdAt },
       },
     };
 
@@ -97,7 +98,7 @@ export class BookService {
   }
 
   /* DELETE A BOOK
-  this function delete a book and retur and observable  
+  this function delete a book  
 */
   deleteBook(id: string): Observable<void> {
     const url = `${this.baseUrl}/${id}`; //endpoint Firestore
