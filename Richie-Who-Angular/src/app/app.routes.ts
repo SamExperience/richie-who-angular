@@ -5,6 +5,7 @@ import { PublicHomePageComponent } from './components/public-home-page/public-ho
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AdminDashboardPageComponent } from './components/admin-dashboard-page/admin-dashboard-page.component';
+import { BookFormComponent } from './components/book-form/book-form.component';
 
 export const routes: Routes = [
   { path: '', component: PublicHomePageComponent },
@@ -16,6 +17,10 @@ export const routes: Routes = [
     path: 'admin-dashboard',
     component: AdminDashboardPageComponent,
     canActivate: [authGuard],
+  },
+  {
+    path: 'book-form',
+    component: BookFormComponent,
   },
   { path: '**', component: PageNotFoundComponent },
 ];

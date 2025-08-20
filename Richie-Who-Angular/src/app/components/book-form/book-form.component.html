@@ -1,1 +1,49 @@
-<p>book-form works!</p>
+<form (ngSubmit)="submitForm()" class="formBook">
+  <fieldset>
+    <legend>Edit/New Book 📝</legend>
+    <div>
+      <label>Title:</label>
+      <input
+        type="text"
+        name="title"
+        [(ngModel)]="book.title"
+        autofocus
+        placeholder="write a title"
+      />
+    </div>
+    <div>
+      <label>Author:</label>
+      <input
+        type="text"
+        name="author"
+        [(ngModel)]="book.author"
+        required
+        placeholder="who is the author? "
+      />
+    </div>
+    <div>
+      <label>Description:</label>
+      <textarea
+        name="Description"
+        [(ngModel)]="book.description"
+        required
+        placeholder="write a description here!"
+      ></textarea>
+    </div>
+    <div>
+      <label>Cover book: ( .png /.jpeg /.jpg /.WebP ) </label>
+      <input
+        type="file"
+        name="imgCoverBook"
+        [(ngModel)]="book.coverUrl"
+        required
+        accept=".png, .jpeg, .jpg, .WebP"
+      />
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+
+      <button type="button" (click)="resetForm()">Cancel</button>
+    </div>
+  </fieldset>
+</form>
